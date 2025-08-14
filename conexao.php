@@ -1,12 +1,6 @@
-<?php // Ex conexão
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "sistema";
-
-$conn = new mysqli($host, $user, $pass, $db);
-
+<?php //Exemplo de conecexão banco
+$conn = new mysqli("localhost", "root", "", "sistema");
 if ($conn->connect_error) {
-    die("Erro: " . $conn->connect_error);
+    die("Erro na conexão: " . $conn->connect_error);
 }
 ?>
